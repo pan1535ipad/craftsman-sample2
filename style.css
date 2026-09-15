@@ -185,3 +185,14 @@ footer>small{grid-column:auto}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}
 .reveal{opacity:1;transform:none}
 }
+
+/* Mobile Japanese line-break refinement 2026-09-15 */
+@media(max-width:600px){
+  h1,h2,h3{text-wrap:balance;line-break:strict;overflow-wrap:normal}
+  p,li,dd{line-break:strict;overflow-wrap:anywhere}
+  p br{display:none}
+  h1 br,h2 br,h3 br{display:block}
+  .hero h1{font-size:clamp(2.75rem,12vw,3.5rem);line-height:1.28}
+  .statement h2,.craft-copy h2,.service-intro h2,.message h2,.safety h2,.contact-lead h2{font-size:clamp(2rem,9.5vw,2.6rem);line-height:1.5}
+  .page-hero h1{font-size:clamp(2.75rem,12vw,3.45rem)}
+}
