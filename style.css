@@ -196,3 +196,7 @@ footer>small{grid-column:auto}
   .statement h2,.craft-copy h2,.service-intro h2,.message h2,.safety h2,.contact-lead h2{font-size:clamp(2rem,9.5vw,2.6rem);line-height:1.5}
   .page-hero h1{font-size:clamp(2.75rem,12vw,3.45rem)}
 }
+
+
+/* Meaning-based mobile line breaks — 2026-09-15 */
+@media(max-width:600px){.sp-line{display:block!important}p br{display:block!important}}
