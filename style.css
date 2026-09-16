@@ -210,3 +210,21 @@ html{line-break:strict}
 h1,h2,h3,.lead,.catch,.copy{text-wrap:balance;overflow-wrap:normal;word-break:normal}
 p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:normal}
 @supports (word-break:auto-phrase){h1,h2,h3,.lead,.catch,.copy,p,li,dt,dd,figcaption{word-break:auto-phrase}}
+
+
+/* Semantic Japanese line groups for mobile headings and copy. */
+.semantic-lines>.semantic-line{display:inline}
+@media(max-width:600px){
+  .semantic-lines>br{display:none!important}
+  .semantic-lines>.semantic-line{
+    display:block;
+    width:max-content;
+    max-width:100%;
+    white-space:nowrap;
+    text-wrap:nowrap;
+  }
+  .principle-title{font-size:clamp(1.8rem,7.6vw,2rem)!important;line-height:1.55!important}
+  .service-scope-title{font-size:clamp(1.85rem,7.8vw,2.05rem)!important;line-height:1.55!important}
+  .cta-title{font-size:clamp(1.8rem,7.6vw,2rem)!important;line-height:1.6!important}
+  .semantic-copy>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
+}
