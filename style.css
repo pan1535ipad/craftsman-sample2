@@ -228,3 +228,27 @@ p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:norma
   .cta-title{font-size:clamp(1.8rem,7.6vw,2rem)!important;line-height:1.6!important}
   .semantic-copy>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
 }
+
+
+/* Desktop layout: use horizontal space and preserve meaningful Japanese lines. */
+@media(min-width:901px){
+  .hero{grid-template-columns:56% 44%}
+  .hero-copy{padding:150px 4vw 90px 7vw}
+  .hero h1{
+    font-size:clamp(4rem,5vw,6.2rem);
+    line-height:1.2;
+    white-space:nowrap;
+  }
+  .craft{grid-template-columns:48% 52%}
+  .craft-copy{padding:105px 5vw 85px 5vw}
+  .craft-copy h2{
+    font-size:clamp(2.4rem,3.5vw,3.7rem);
+    line-height:1.45;
+    white-space:nowrap;
+  }
+  .service-scope-title{
+    font-size:clamp(2.4rem,4vw,4rem)!important;
+    line-height:1.45!important;
+    white-space:nowrap;
+  }
+}
